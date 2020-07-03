@@ -2,8 +2,6 @@ module github.com/cloudentity/golicense
 
 go 1.13
 
-replace github.com/mitchellh/golicense => ./
-
 require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.0
 	github.com/alcortesm/tgz v0.0.0-20161220082320-9c5fe88206d7 // indirect
@@ -59,3 +57,5 @@ require (
 	gopkg.in/src-d/go-siva.v1 v1.3.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
+replace github.com/mitchellh/golicense => ./

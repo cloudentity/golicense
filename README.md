@@ -155,7 +155,9 @@ Sample output:
 </bom>
 ```
 
-Additionally if a licence cannot be resolved, it's possible to set custom licence name and optionally provide a url.
+### Custom licence
+
+If a licence cannot be resolved, it's possible to set custom licence using `override` section.
 
 Example:
 
@@ -163,31 +165,20 @@ Example:
 {
   "override": {
     "github.com/krolaw/zipstream": "Custom"
-  },
-  "sbomLicenseURLs": {
-    "github.com/krolaw/zipstream": "https://github.com/krolaw/zipstream/blob/master/LICENSE"
   }
 }
 ```
 
-Output:
+Additionally, it's possible to set a licence URL.
 
-```xml
-<bom xmlns="http://cyclonedx.org/schema/bom/1.1" version="1" serialNumber="urn:uuid:16d113cb-029e-4ad0-bd68-c4407c6ce285">
-  <component type="library">
-    <name>github.com/krolaw/zipstream</name>
-    <version>v0.0.0-20180621105154-0a2661891f94</version>
-    <purl>pkg:golang/github.com/krolaw/zipstream@0.0.0-20180621105154-0a2661891f94</purl>
-    <licenses>
-      <license>
-        <name>Custom</name>
-        <url>https://github.com/krolaw/zipstream/blob/master/LICENSE</url>
-      </license>
-    </licenses>
-  </component> 
-</bom>
+Example:
+```json
+{
+  "licenseURLs": {
+    "github.com/krolaw/zipstream": "https://github.com/krolaw/zipstream/blob/master/LICENSE"
+  }
+}
 ```
-
 
 ## Limitations
 

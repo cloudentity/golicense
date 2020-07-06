@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/hashicorp/go-multierror"
-	"github.com/cloudentity/golicense/license"
-	"github.com/cloudentity/golicense/module"
+	"github.com/mitchellh/golicense/license"
+	"github.com/mitchellh/golicense/module"
 )
 
 // MultiOutput calls the functions of multiple Output implementations.

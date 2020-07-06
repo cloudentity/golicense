@@ -6,7 +6,7 @@ import (
 
 	"github.com/google/go-github/v18/github"
 	"github.com/mitchellh/go-spdx"
-	"github.com/cloudentity/golicense/license"
+	"github.com/mitchellh/golicense/license"
 	"gopkg.in/src-d/go-license-detector.v2/licensedb"
 	"gopkg.in/src-d/go-license-detector.v2/licensedb/filer"
 )

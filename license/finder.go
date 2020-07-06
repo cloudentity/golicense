@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/cloudentity/golicense/module"
+	"github.com/mitchellh/golicense/module"
 )
 
 // Finder implementations can find a license for a given module.

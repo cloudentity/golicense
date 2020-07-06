@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/cloudentity/golicense/module"
+	"github.com/mitchellh/golicense/module"
 )
 
 type Translator struct {

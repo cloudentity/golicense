@@ -56,7 +56,7 @@ func (c *Component) WithLicense(l *license.License, config *config.Config) {
 	if l != nil && l.SPDX != "" {
 		var url *string
 
-		if u, ok := config.SBOMLicenseURLs[c.Name]; ok {
+		if u, ok := config.LicenseURLs[c.Name]; ok {
 			url = &u
 		}
 
@@ -75,7 +75,7 @@ func (c *Component) WithLicenseFallback(config *config.Config) {
 	if l, ok := config.Override[c.Name]; ok {
 		var url *string
 
-		if u, ok := config.SBOMLicenseURLs[c.Name]; ok {
+		if u, ok := config.LicenseURLs[c.Name]; ok {
 			url = &u
 		}
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/cloudentity/golicense/module"
+	"github.com/mitchellh/golicense/module"
 	"github.com/stretchr/testify/require"
 )
 

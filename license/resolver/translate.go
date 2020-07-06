@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/cloudentity/golicense/license"
-	"github.com/cloudentity/golicense/module"
+	"github.com/mitchellh/golicense/license"
+	"github.com/mitchellh/golicense/module"
 	"golang.org/x/tools/go/vcs"
 )
 

@@ -16,6 +16,7 @@ require (
 	github.com/flynn/go-shlex v0.0.0-20150515145356-3f9db97f8568 // indirect
 	github.com/gliderlabs/ssh v0.2.2 // indirect
 	github.com/google/go-github/v18 v18.2.0
+	github.com/google/uuid v1.1.1
 	github.com/gosuri/uilive v0.0.0-20170323041506-ac356e6e42cd
 	github.com/hashicorp/go-multierror v1.0.0
 	github.com/hashicorp/hcl2 v0.0.0-20181111172936-0467c0c38ca2
@@ -30,8 +31,9 @@ require (
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/montanaflynn/stats v0.0.0-20180911141734-db72e6cae808 // indirect
 	github.com/neurosnap/sentences v1.0.6 // indirect
+	github.com/package-url/packageurl-go v0.1.0
 	github.com/pelletier/go-buffruneio v0.2.0 // indirect
-	github.com/pkg/errors v0.8.0 // indirect
+	github.com/pkg/errors v0.8.0
 	github.com/rsc/goversion v1.2.0
 	github.com/sebdah/goldie v0.0.0-20180424091453-8784dd1ab561
 	github.com/shogo82148/go-shuffle v0.0.0-20180218125048-27e6095f230d // indirect

@@ -42,7 +42,7 @@ type Hash struct {
 type License struct {
 	ID   *string `xml:"id,omitempty"`
 	Name *string `xml:"name,omitempty"`
-	URL  *string `xml:"url,omitempty`
+	URL  *string `xml:"url,omitempty"`
 }
 
 func NewComponent(m *module.Module) Component {

@@ -56,3 +56,5 @@ require (
 	gopkg.in/src-d/go-siva.v1 v1.3.0 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 )
+
+replace github.com/russross/blackfriday/v2 v2.0.0 => gopkg.in/russross/blackfriday.v2 v2.0.0

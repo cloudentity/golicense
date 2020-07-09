@@ -31,6 +31,12 @@ type Component struct {
 	Version  string    `xml:"version"`
 	PURL     string    `xml:"purl"`
 	Licences []License `xml:"licenses>license"`
+	Hashes   []Hash    `xml:"hashes>hash"`
+}
+
+type Hash struct {
+	Alg   string `xml:"alg,attr"`
+	Value string `xml:",chardata"`
 }
 
 type License struct {
@@ -44,12 +50,24 @@ func NewComponent(m *module.Module) Component {
 		Path:    m.Path,
 		Version: m.Version,
 	}
-	return Component{
+
+	c := Component{
 		Type:    "library",
 		Name:    m.Path,
 		Version: m.Version,
 		PURL:    mod.PURL(),
 	}
+
+	if m.Hash != "" {
+		c.Hashes = []Hash{
+			{
+				Alg:   "SHA-256",
+				Value: m.Hash,
+			},
+		}
+	}
+
+	return c
 }
 
 func (c *Component) WithLicense(l *license.License, config *config.Config) {
@@ -89,8 +107,8 @@ func (c *Component) WithLicenseFallback(config *config.Config) {
 }
 
 type Module struct {
-	Path    string `json:"Path"`
-	Version string `json:"Version"`
+	Path    string
+	Version string
 }
 
 func (m Module) PURL() string {

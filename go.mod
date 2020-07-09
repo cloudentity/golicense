@@ -1,4 +1,4 @@
-module github.com/mitchellh/golicense
+module github.com/cloudentity/golicense
 
 go 1.13
 

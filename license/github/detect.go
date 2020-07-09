@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"fmt"
 
-	"github.com/mitchellh/golicense/license"
+	"github.com/cloudentity/golicense/license"
 	"github.com/google/go-github/v18/github"
 	"github.com/mitchellh/go-spdx"
 	"gopkg.in/src-d/go-license-detector.v2/licensedb"

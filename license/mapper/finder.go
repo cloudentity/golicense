@@ -3,8 +3,8 @@ package mapper
 import (
 	"context"
 
-	"github.com/mitchellh/golicense/license"
-	"github.com/mitchellh/golicense/module"
+	"github.com/cloudentity/golicense/license"
+	"github.com/cloudentity/golicense/module"
 	"github.com/mitchellh/go-spdx"
 )
 

@@ -9,9 +9,9 @@ import (
 	"sync"
 
 	"github.com/google/uuid"
-	"github.com/mitchellh/golicense/config"
-	"github.com/mitchellh/golicense/license"
-	"github.com/mitchellh/golicense/module"
+	"github.com/cloudentity/golicense/config"
+	"github.com/cloudentity/golicense/license"
+	"github.com/cloudentity/golicense/module"
 	"github.com/package-url/packageurl-go"
 	"github.com/pkg/errors"
 )

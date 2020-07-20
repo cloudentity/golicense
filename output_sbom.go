@@ -8,10 +8,10 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/google/uuid"
 	"github.com/cloudentity/golicense/config"
 	"github.com/cloudentity/golicense/license"
 	"github.com/cloudentity/golicense/module"
+	"github.com/google/uuid"
 	"github.com/package-url/packageurl-go"
 	"github.com/pkg/errors"
 )
@@ -207,12 +207,12 @@ func (o *SBOMOutput) Close() error {
 		}
 	}
 
-	xmlOut, err := xml.MarshalIndent(bom, " ", "  ")
+	xmlOut, err := xml.MarshalIndent(bom, "", "    ")
 	if err != nil {
 		return errors.Wrapf(err, "failed to generate xml")
 	}
 
-	_, err = f.Write(xmlOut)
+	_, err = f.Write([]byte(xml.Header + string(xmlOut)))
 	if err != nil {
 		return errors.Wrapf(err, "failed to write xml to a file")
 	}
